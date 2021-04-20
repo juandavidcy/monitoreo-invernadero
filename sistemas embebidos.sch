@@ -1,0 +1,185 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2950 4000 1100 2200
+U 607BACC3
+F0 "stm32" 50
+F1 "STM32.sch" 50
+F2 "JTDO" I R 4050 4150 50 
+F3 "JTRST" I R 4050 4300 50 
+F4 "JTDI" B R 4050 4450 50 
+F5 "JTCK" B R 4050 4600 50 
+F6 "JTMS" B R 4050 4750 50 
+F7 "SPI_MOSI" B R 4050 4900 50 
+F8 "SPI_MISO" B R 4050 5050 50 
+F9 "SPI_SCK" B R 4050 5200 50 
+F10 "SPI_NSS" B R 4050 5350 50 
+F11 "NRST" B R 4050 5500 50 
+$EndSheet
+$Comp
+L RPi_Zero_pHat_Template-cache:Connector-ML_RPi_GPIO J1
+U 1 1 607C536B
+P 6050 3950
+F 0 "J1" H 6800 4237 60  0000 C CNN
+F 1 "Connector-ML_RPi_GPIO" H 6800 4131 60  0000 C CNN
+F 2 "" H 6050 3950 60  0000 C CNN
+F 3 "" H 6050 3950 60  0000 C CNN
+	1    6050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 607C5371
+P 5750 6000
+F 0 "#PWR01" H 5750 5750 50  0001 C CNN
+F 1 "GND" H 5755 5827 50  0000 C CNN
+F 2 "" H 5750 6000 50  0001 C CNN
+F 3 "" H 5750 6000 50  0001 C CNN
+	1    5750 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5850 5750 5850
+Wire Wire Line
+	5750 5850 5750 6000
+Wire Wire Line
+	5850 5150 5750 5150
+Wire Wire Line
+	5750 5150 5750 5850
+Connection ~ 5750 5850
+Wire Wire Line
+	5850 4350 5750 4350
+Wire Wire Line
+	5750 4350 5750 5150
+Connection ~ 5750 5150
+$Comp
+L power:GND #PWR02
+U 1 1 607C537F
+P 7900 6000
+F 0 "#PWR02" H 7900 5750 50  0001 C CNN
+F 1 "GND" H 7905 5827 50  0000 C CNN
+F 2 "" H 7900 6000 50  0001 C CNN
+F 3 "" H 7900 6000 50  0001 C CNN
+	1    7900 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 5550 7900 5550
+Wire Wire Line
+	7900 5550 7900 6000
+Wire Wire Line
+	7750 4850 7900 4850
+Wire Wire Line
+	7900 4850 7900 5350
+Connection ~ 7900 5550
+Wire Wire Line
+	7750 5350 7900 5350
+Connection ~ 7900 5350
+Wire Wire Line
+	7900 5350 7900 5550
+Wire Wire Line
+	7750 4550 7900 4550
+Wire Wire Line
+	7900 4550 7900 4850
+Connection ~ 7900 4850
+Wire Wire Line
+	7750 4150 7900 4150
+Wire Wire Line
+	7900 4150 7900 4550
+Connection ~ 7900 4550
+Text Label 7950 4750 0    50   ~ 0
+JTDO
+Text Label 7950 4950 0    50   ~ 0
+JTCK
+Text Label 5600 5750 0    50   ~ 0
+JTDI
+Text Label 5500 4650 0    50   ~ 0
+JTRST
+Text Label 5500 4550 0    50   ~ 0
+JTMS
+Text Label 5500 4850 0    50   ~ 0
+SPI_MOSI
+Text Label 5500 4950 0    50   ~ 0
+SPI_MISO
+Text Label 5500 5050 0    50   ~ 0
+SPI_SCK
+Wire Wire Line
+	5450 4850 5850 4850
+Wire Wire Line
+	5450 4950 5850 4950
+Wire Wire Line
+	5450 5050 5850 5050
+Text Label 7800 5050 0    50   ~ 0
+SPI_NSS
+Wire Wire Line
+	7750 5050 8150 5050
+Wire Wire Line
+	7750 4950 8150 4950
+Wire Wire Line
+	7750 4750 8150 4750
+Wire Wire Line
+	5450 4650 5850 4650
+Wire Wire Line
+	5450 4550 5850 4550
+Wire Wire Line
+	5450 5650 5850 5650
+Wire Wire Line
+	5450 5750 5850 5750
+Text Label 5500 4050 0    50   ~ 0
+NRST
+Wire Wire Line
+	5400 4050 5850 4050
+Wire Wire Line
+	4050 5500 4650 5500
+Wire Wire Line
+	4650 4150 4050 4150
+Wire Wire Line
+	4050 4300 4650 4300
+Wire Wire Line
+	4050 4450 4650 4450
+Wire Wire Line
+	4050 4600 4650 4600
+Wire Wire Line
+	4050 4750 4650 4750
+Wire Wire Line
+	4050 4900 4650 4900
+Wire Wire Line
+	4050 5050 4650 5050
+Wire Wire Line
+	4050 5200 4650 5200
+Wire Wire Line
+	4050 5350 4650 5350
+Text Label 4150 4150 0    50   ~ 0
+JTDO
+Text Label 4150 4300 0    50   ~ 0
+JTRST
+Text Label 4150 4450 0    50   ~ 0
+JTDI
+Text Label 4150 4600 0    50   ~ 0
+JTCK
+Text Label 4150 4750 0    50   ~ 0
+JTMS
+Text Label 4150 4900 0    50   ~ 0
+SPI_MOSI
+Text Label 4150 5050 0    50   ~ 0
+SPI_MISO
+Text Label 4150 5200 0    50   ~ 0
+SPI_SCK
+Text Label 4150 5350 0    50   ~ 0
+SPI_NSS
+Text Label 4150 5500 0    50   ~ 0
+NRST
+$EndSCHEMATC
